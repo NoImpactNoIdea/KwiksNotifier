@@ -8,10 +8,11 @@
 import Foundation
 import UIKit
 
-//grab the image from the bundle
-public class ImageProvider {
-    public static func image(named: String) -> UIImage? {
-        return UIImage(named: named, in: Bundle(for: self), with: nil)?.withRenderingMode(.alwaysOriginal)
+public class RandomClass: Any { }
+extension UIImage {
+    public convenience init?(fromPodAssetName name: String) {
+        let bundle = Bundle(for: RandomClass.self)
+        self.init(named: name, in: bundle, compatibleWith: nil)
     }
 }
 
@@ -39,8 +40,12 @@ public class KwiksNotifier {
         print("Wynonna Ryder")
     }
     
+    public func printChestersName() {
+        print("Wynonna Ryder")
+    }
+    
     public func fetchPhoneImage() -> UIImage {
-        let image = ImageProvider.image(named: "phone_icon")?.withRenderingMode(.alwaysOriginal)
+        let image = UIImage.init(fromPodAssetName: "phone_icon")?.withRenderingMode(.alwaysOriginal)
         return image ?? UIImage()
     }
 }

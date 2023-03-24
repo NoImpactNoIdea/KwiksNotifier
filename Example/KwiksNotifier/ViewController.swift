@@ -43,13 +43,8 @@ class ViewController: UIViewController {
     
     
     func runTests() {
-        
-        KwiksNotifier().printMyName()
-        KwiksNotifier().printHerName()
-        
         let image = KwiksNotifier().fetchPhoneImage()
         self.testImage.image = image
-        
     }
     
 
