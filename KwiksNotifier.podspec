@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KwiksNotifier'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KwiksNotifier.'
+  s.summary          = 'This library will help improve existing popups by keeping the frontend nice and light.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'This is a nice long and thourough desfription that the linter likes to bitch about obsessovly. Its late, spelling is tough and I need a few more sentences to hit the monimum. Not sure what that is, but its not great. It may be actually, not 100% there brother. Okay one more, and this should be good for sure.'
                        DESC
 
   s.homepage         = 'https://github.com/26388491/KwiksNotifier'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '26388491' => 'noimpactapplications@gmail.com' }
-  s.source           = { :git => 'https://github.com/26388491/KwiksNotifier.git', :tag => s.version.to_s }
+  s.author           = { 'KWIKS CTO' => 'charlie@kwiks.com' }
+  s.source           = { :git => 'https://github.com/NoImpactNoIdea/KwiksNotifier.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'KwiksNotifier/Classes/**/*'
   
