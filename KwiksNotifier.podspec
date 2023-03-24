@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KwiksNotifier'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'This library will help improve existing popups by keeping the frontend nice and light.'
 
 # This description is used to generate tags and improve search results.
@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
    s.swift_versions = "5.0"
    s.requires_arc    = true
   
-  # s.resource_bundles = {
-  #   'KwiksNotifier' => ['KwiksNotifier/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'KwiksNotifier' => ['KwiksNotifier/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit'
