@@ -44,6 +44,10 @@ public class KwiksNotifier {
         print("Wynonna Ryder")
     }
     
+    public func printYellow() {
+        print("yellow")
+    }
+    
     public func fetchPhoneImage() -> UIImage {
         let image = UIImage.init(fromPodAssetName: "phone_icon")?.withRenderingMode(.alwaysOriginal)
         return image ?? UIImage()
