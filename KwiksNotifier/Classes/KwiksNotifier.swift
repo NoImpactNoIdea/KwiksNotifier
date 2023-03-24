@@ -27,6 +27,10 @@ public class KwiksNotifier {
         print("Cristina Arcodia")
     }
     
+    public func printBlakesName() {
+        print("Blake Arcodia")
+    }
+    
     public func fetchPhoneImage() -> UIImage {
         let image = ImageProvider.image(named: "phone_icon")?.withRenderingMode(.alwaysOriginal)
         return image ?? UIImage()
