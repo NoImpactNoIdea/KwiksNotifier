@@ -28,9 +28,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-#  s.source_files = 'KwiksNotifier/Classes/**/*'
-   s.source_files = 'Source/**/*.swift'
+  s.source_files = 'KwiksNotifier/Classes/**/*'
+#   s.source_files = 'Source/**/*.swift'
    s.swift_versions = "5.0"
+   s.requires_arc    = true
   
   # s.resource_bundles = {
   #   'KwiksNotifier' => ['KwiksNotifier/Assets/*.png']
